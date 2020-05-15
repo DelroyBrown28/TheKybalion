@@ -6,6 +6,7 @@ html {
     background-color: #1F1F1F;
     font-family: 'Noto Serif JP', serif;
     display: flex;
+    overflow: hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
