@@ -13,10 +13,11 @@
 
 <body>
 
+
     <div class="book_chapters_wrap">
         <ul class="book_chapters_list">
-            <li class="chapters non_chapter">Introduction</li>
-            <li class="chapters">1. The Hermetic Philosophy</li>
+            <li class="chapters intro_chapter">Introduction</li>
+            <li class="chapters hermetic_philosophy">1. The Hermetic Philosophy</li>
             <li class="chapters">2. The Seven Hermetic Principles</li>
             <li class="chapters">3. Mental Transmutation</li>
             <li class="chapters">4. The All</li>
@@ -35,10 +36,16 @@
         </ul>
     </div>
 
-    <div class="shown_chapters">
-        <h1 class="chapter_title">Introduction</h1>
+    <div class="chapter_view">
+        <small id="chapter_number">Chapter I</small> <!--hide for intro chapter-->
+        <h1 id="chapter_title">Introduction</h1>
         <hr class="chapter_title_underline">
-        <div class="introduction_wrap">
+        
+        <!--INTRODCTION-->
+        <div class="intro_chapters_wrap">
+            <a id="page_top"></a>
+
+            <!--INTRODCTION-->
             <p class="introduction">
                 We take great pleasure in presenting to the attention
                 of students and investigators of the
@@ -120,13 +127,11 @@
                 Lamp of Wisdom. These men devoted their lives to the labor of
                 love which the poet has so well stated in his lines:
             </p>
-
-            <div class="poem">
+            <blockquote class="poem">
                 <em>“O, let not the flame die out! Cherished age after age in its dark
                     cavern—in its holy temples cherished. Fed by pure ministers of love—
                     let not the flame die out!”</em>
-            </div>
-
+            </blockquote>
             <p class="introduction2">
                 These men have never sought popular approval, nor numbers
                 of followers. They are indifferent to these things, for they know
@@ -178,11 +183,16 @@
                 one, for otherwise the Hermetic Teachings will be as “words,
                 words, words” to you.
             </p>
+            <a href="#page_top"> <div class="end_of_chapter">End of chapter.</div>
+        </div></a>
+        <!--// INTRODCTION-->
 
-        </div>
+
 
     </div>
 
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
