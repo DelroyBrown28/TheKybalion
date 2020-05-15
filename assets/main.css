@@ -9,7 +9,6 @@ html {
     overflow: hidden;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 
 
 .book_chapters_wrap {
@@ -39,6 +38,7 @@ html {
     color: #f1f1f1;
     font-size: 1.3em;
     font-weight: 700;
+
 }
 
 .non_chapter {
@@ -56,6 +56,7 @@ html {
 
 }
 
+
 .chapter_title {
     color: #fff;
     margin: 0;
@@ -63,50 +64,58 @@ html {
 
 }
 
-.intro_author {
-    color: #fff;
-    font-weight: 200;
-    margin: 0;
-    margin-left: 500px;
+.chapter_title_underline {
+    width: 200px;
+    border: 1px solid red;
 }
 
-.intro_to_centenary_wrap {
+
+.introduction_wrap {
     color: #fff;
-    opacity: 0.7;
     overflow-y: auto;
+    display: flex;
+    flex-flow: column;
     width: 65%;
     height: 80%;
     margin-top: 20px;
 
 }
 
+.introduction,
+.introduction2 {
+    opacity: 0.7;
+    font-family: 'Noto Serif JP', serif;
+}
 
-
-.basic_principles {
-    position: relative;
+.poem {
     width: 80%;
-    margin: auto;
-    margin-top: 40px;
+    align-self: center;
     text-align: center;
-
-
+    margin: 15px 0px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
 }
 
-.strong_text {
+.opacity_font {
+    opacity: 1 !important;
+}
+
+a {
+    text-decoration: none;
     color: #fff;
-    font-size: 1em;
-    font-weight: 900;
-    background-color: red;
-    margin-bottom: 15px;
-
 }
 
-.intro_to_centenary_wrap::-webkit-scrollbar {
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+
+.introduction_wrap::-webkit-scrollbar {
     display: none;
 }
 
 /* Hide scrollbar for IE and Edge */
-.intro_to_centenary_wrap {
+.introduction_wrap {
     -ms-overflow-style: none;
 }
-
