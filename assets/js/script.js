@@ -20,9 +20,13 @@ $(document).ready(function () {
 
     function showHermeticPhilosophyChapter() {
         $(this).css("opacity", "1");
+        $(".introduction").css("opacity", "0.4");
         $(".introduction_chapter").fadeOut("fast", function () {
             $(".hermetic_philosophy_chapter").fadeIn("slow", function () {
                 $(".author_small, .hp_quote, .hp_quote2").animate({
+                    opacity: "1",
+                }, 1000);
+                $(".hp_quote3").animate({
                     opacity: "1",
                 }, 1000)
                 $(".chapter_underline").animate({
