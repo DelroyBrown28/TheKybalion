@@ -1,19 +1,24 @@
 $(document).ready(function () {
 
+
     $(".intro_chapter").click(showIntroChapter);
 
     function showIntroChapter() {
-        $(this).animate({
+        document.getElementById("chapter_title").innerHTML = "Introduction";
+        $(".hermetic_philosophy_wrap, .hermetic_philosophy_chapter").fadeOut("fast", function () {
+            $(".intro_chapter_wrap, .introduction, .introduction2, .poem").fadeIn();
+            $("#chapter_number").css("visibility", "hidden");
+            $(".chapter_title_underline").animate({
+                width: "200px",
+            });
+
+        })
+        $(".intro_chapter").animate({
             opacity: "1",
         })
         $(".hermetic_philosophy").animate({
             opacity: "0.4",
         })
-        $(".chapter_title_underline").animate({
-            width: "200px",
-        })
-        $(".introduction, .introduction2, .poem, .end_of_chapter").fadeIn();
-        document.getElementById("chapter_title").innerHTML = "Introduction";
         $("#chapter_number").css("visibility", "hidden");
         return false;
     }
@@ -21,18 +26,21 @@ $(document).ready(function () {
     $(".hermetic_philosophy").click(showHermeticPhilosophy);
 
     function showHermeticPhilosophy() {
-        $(this).animate({
+        document.getElementById("chapter_title").innerHTML = "The Hermetic Philosophy";
+        $(".intro_chapter_wrap, .introduction, .introduction2, .poem").fadeOut("fast", function () {
+            $(".hermetic_philosophy_wrap, .hermetic_philosophy_chapter").fadeIn();
+            $("#chapter_number").css("visibility", "visible");
+            $(".chapter_title_underline").animate({
+                width: "100px",
+            });
+
+        });
+        $(".hermetic_philosophy").animate({
             opacity: "1",
         })
         $(".intro_chapter").animate({
             opacity: "0.4",
         })
-        $(".chapter_title_underline").animate({
-            width: "100px",
-        })
-        $(".introduction, .introduction2, .poem, .end_of_chapter").fadeOut();
-        document.getElementById("chapter_title").innerHTML = "The Hermetic Philosophy";
-        $("#chapter_number").css("visibility", "visible");
         return false;
     }
 

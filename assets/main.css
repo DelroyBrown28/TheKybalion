@@ -11,7 +11,6 @@ html {
 }
 
 
-
 .book_chapters_wrap {
     width: 30%;
     height: 100%;
@@ -51,7 +50,6 @@ html {
     justify-content: center;
     flex-flow: column;
 
-    border: 1px solid red;
 
 }
 
@@ -70,7 +68,7 @@ html {
 
 /*----INTRODUCTION CHAPTER----*/
 
-.intro_chapters_wrap {
+.intro_chapter_wrap {
     color: #fff;
     overflow-y: auto;
     display: flex;
@@ -81,20 +79,24 @@ html {
     margin-top: 20px;
     scroll-behavior: smooth;
 
-
+    border: 1px solid red;
 
 }
 
-.intro_chapters_wrap::-webkit-scrollbar {
+
+.intro_chapter_wrap::-webkit-scrollbar {
     display: none;
 }
 
 
 .introduction,
-.introduction2 {
+.introduction2,
+.hermetic_philosophy_chapter {
+    color: #fff;
     position: relative;
     opacity: 0.7;
     font-family: 'Noto Serif JP', serif;
+
 
 }
 
@@ -105,6 +107,7 @@ html {
     margin: 15px 0px;
     border-left: 1px solid red;
     border-right: 1px solid red;
+
 }
 
 .end_of_chapter {
@@ -115,6 +118,36 @@ html {
 
 /*----//  INTRODUCTION CHAPTER----*/
 /*----The Hermetic Philosophy CHAPTER----*/
+
+.hermetic_philosophy_wrap {
+    width: 65%;
+    height: 80%;
+    display: none;
+
+    border: 1px solid white;
+}
+
+.hermetic_philosophy_chapter {
+    opacity: 0.7;
+
+
+}
+
+.hermetic_philosophy_quote {
+    text-align: center;
+    opacity: 0.7;
+    width: 80%;
+
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+
+}
+
+.quote_author {
+    position: relative;
+    margin-left: 400px;
+
+}
 
 
 
