@@ -4,8 +4,8 @@ $(document).ready(function () {
 
     function showIntroductionChapter() {
         $(this).css("opacity", "1");
-        $(".hermetic_philosophy, .seven_hermetic_principles").css("opacity", "0.4");
-        $(".seven_principles_chapter").hide();
+        $(".hermetic_philosophy, .seven_hermetic_principles, .mental_transmutation").css("opacity", "0.4");
+        $(".seven_principles_chapter, .mental_transmutation_chapter").hide();
 
         $(".hermetic_philosophy_chapter").fadeOut("fast", function () {
             $(".introduction_chapter").fadeIn("slow", function () {
@@ -23,7 +23,7 @@ $(document).ready(function () {
     function showHermeticPhilosophyChapter() {
         $(this).css("opacity", "1");
         $(".introduction, .seven_hermetic_principles").css("opacity", "0.4");
-        $(".seven_principles_chapter, .introduction_chapter").hide();
+        $(".seven_principles_chapter, .introduction_chapter, .mental_transmutation_chapter").hide();
 
         $(".introduction_chapter").fadeOut("fast", function () {
             $(".hermetic_philosophy_chapter").fadeIn("slow", function () {
@@ -46,11 +46,28 @@ $(document).ready(function () {
 
     function showSevenHermeticChapter() {
         $(this).css("opacity", "1");
-        $(".introduction, .hermetic_philosophy").css("opacity", "0.4");
-        $(".introduction_chapter").hide();
+        $(".introduction, .hermetic_philosophy, .mental_transmutation").css("opacity", "0.4");
+        $(".introduction_chapter, .mental_transmutation_chapter").hide();
 
         $(".hermetic_philosophy_chapter").fadeOut("fast", function () {
             $(".seven_principles_chapter").fadeIn("slow", function () {
+                $(".chapter_underline").animate({
+                    width: "500px",
+                }, 500)
+            });
+        });
+        return false;
+    }
+
+    $(".mental_transmutation").click(showMentalTransChapter);
+
+    function showMentalTransChapter() {
+        $(this).css("opacity", "1");
+        $(".introduction, .hermetic_philosophy, .seven_hermetic_principles").css("opacity", "0.4");
+        $(".introduction_chapter, .seven_principles_chapter").hide();
+
+        $(".hermetic_philosophy_chapter").fadeOut("fast", function () {
+            $(".mental_transmutation_chapter").fadeIn("slow", function () {
                 $(".chapter_underline").animate({
                     width: "600px",
                 }, 500)
@@ -58,6 +75,7 @@ $(document).ready(function () {
         });
         return false;
     }
+
 
 
 
