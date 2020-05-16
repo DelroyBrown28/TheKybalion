@@ -4,7 +4,9 @@ $(document).ready(function () {
 
     function showIntroductionChapter() {
         $(this).css("opacity", "1");
-        $(".hermetic_philosophy").css("opacity", "0.4");
+        $(".hermetic_philosophy, .seven_hermetic_principles").css("opacity", "0.4");
+        $(".seven_principles_chapter").hide();
+
         $(".hermetic_philosophy_chapter").fadeOut("fast", function () {
             $(".introduction_chapter").fadeIn("slow", function () {
                 $(".chapter_underline").animate({
@@ -20,7 +22,9 @@ $(document).ready(function () {
 
     function showHermeticPhilosophyChapter() {
         $(this).css("opacity", "1");
-        $(".introduction").css("opacity", "0.4");
+        $(".introduction, .seven_hermetic_principles").css("opacity", "0.4");
+        $(".seven_principles_chapter, .introduction_chapter").hide();
+
         $(".introduction_chapter").fadeOut("fast", function () {
             $(".hermetic_philosophy_chapter").fadeIn("slow", function () {
                 $(".author_small, .hp_quote, .hp_quote2").animate({
@@ -36,6 +40,25 @@ $(document).ready(function () {
         });
         return false;
     }
+
+
+    $(".seven_hermetic_principles").click(showSevenHermeticChapter);
+
+    function showSevenHermeticChapter() {
+        $(this).css("opacity", "1");
+        $(".introduction, .hermetic_philosophy").css("opacity", "0.4");
+        $(".introduction_chapter").hide();
+
+        $(".hermetic_philosophy_chapter").fadeOut("fast", function () {
+            $(".seven_principles_chapter").fadeIn("slow", function () {
+                $(".chapter_underline").animate({
+                    width: "600px",
+                }, 500)
+            });
+        });
+        return false;
+    }
+
 
 
 });

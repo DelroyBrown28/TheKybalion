@@ -16,6 +16,11 @@ a {
     outline: none;
 }
 
+.gone {
+    display: none;
+}
+
+/*--TOP CONTENTS--*/
 
 .top_contents {
     position: relative;
@@ -33,6 +38,9 @@ a {
 
 }
 
+/*--//  TOP CONTENTS--*/
+
+/*--CHAPTER VIEW--*/
 .chapter_view_wrap {
     width: 100%;
     height: 90%;
@@ -76,14 +84,17 @@ a {
 }
 
 .chapter_underline {
-    width: 200px;
+    width: 0px;
     border: 1px solid red;
     margin-bottom: 20px;
     align-self: center;
 }
 
+/*--//  CHAPTER VIEW--*/
+
 .introduction_chapter,
-.hermetic_philosophy_chapter {
+.hermetic_philosophy_chapter,
+.seven_principles_chapter {
     width: 70%;
     height: 100%;
     color: #fff;
@@ -94,11 +105,10 @@ a {
     overflow-y: auto;
     scroll-behavior: smooth;
 
-
-
 }
 
-.hermetic_philosophy_chapter {
+.hermetic_philosophy_chapter,
+.seven_principles_chapter {
     display: none;
     position: relative;
 
@@ -107,7 +117,8 @@ a {
 
 .hp_quote,
 .hp_quote2,
-.hp_quote3 {
+.hp_quote3,
+.sp_quote {
     width: 70%;
     margin: 0px 0px 30px 0px;
     border-left: 1px solid red;
@@ -119,13 +130,16 @@ a {
 
 }
 
+.sp_quote {
+    opacity: 1;
+}
 .hp_quote2 {
     margin-top: 30px;
 }
 
 .author_small {
     align-self: center;
-    opacity: 0;
+    opacity: 1; /*--rememeber to reset to 0!--*/
 
 }
 
@@ -137,6 +151,19 @@ a {
     border-right: 1px solid red;
     align-self: center;
     text-align: center;
+}
+
+.principles_wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.principles {
+    margin: 10px 0px;
+    
 }
 
 .end_of_chapter {
