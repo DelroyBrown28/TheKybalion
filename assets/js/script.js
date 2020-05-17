@@ -28,10 +28,10 @@ $(document).ready(function () {
         $(".introduction_chapter").fadeOut("fast", function () {
             $(".hermetic_philosophy_chapter").fadeIn("slow", function () {
                 $(".author_small, .hp_quote, .hp_quote2").animate({
-                    opacity: "1",
+                    opacity: "0.7",
                 }, 1000);
                 $(".hp_quote3").animate({
-                    opacity: "1",
+                    opacity: "0.7",
                 }, 1000)
                 $(".chapter_underline").animate({
                     width: "400px",
