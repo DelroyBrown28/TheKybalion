@@ -10,6 +10,15 @@ html {
 
 }
 
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transition: 1s;
+}
+
 .main_container_one,
 .main_container_two {
     width: 100%;
@@ -76,6 +85,8 @@ html {
 
 .chapter_title_underline {
     width: 50%;
+    border: 1px solid red;
+
 }
 
 
@@ -84,6 +95,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
     overflow: auto;
 
 }
@@ -92,13 +104,57 @@ html {
     display: none;
 }
 
-.introduction_chapter {
+.introduction_chapter,
+.introduction_chapter2 {
+    position: relative;
     width: 50%;
     color: #fff;
     font-size: 1.3em;
     font-weight: 200;
 
 
+}
+
+.introduction_chapter {
+    margin-top: 62%;
+}
+
+.introduction_quote {
+    color: #fff;
+    opacity: 0.7;
+    width: 40%;
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.fa-quote-right,
+.fa-quote-left {
+    align-self: flex-end;
+    color: red;
+}
+
+.fa-quote-left {
+    align-self: flex-start;
+}
+
+.author {
+    align-self: flex-end;
+
+}
+
+.next_chapter {
+    color: red;
+    font-weight: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.fa-grip-lines-vertical {
+    color: #fff;
+    margin: 0px 10px;
 }
 
 
@@ -113,6 +169,7 @@ html {
         -5px -5px 10px #313131;
     color: #FFF;
 }
+
 
 a {
     text-decoration: none;
