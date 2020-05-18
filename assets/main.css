@@ -1,201 +1,120 @@
 body,
 html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2b2b2b;
+    font-family: 'Cormorant Garamond', serif;
+    scroll-behavior: smooth;
+
+}
+
+.main_container_one,
+.main_container_two {
     width: 100%;
     height: 100%;
-    background-color: rgb(53, 53, 53);
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+}
+
+.main_container_two {
     flex-flow: column;
     overflow: hidden;
 }
 
-a {
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-}
-
-.red_underline {
-    border: 1px solid red;
-}
-
-/*--TOP CONTENTS--*/
-
-.top_contents {
-    position: relative;
-    width: 100%;
-    height: 10%;
+.chapters_container {
+    width: 40%;
+    height: 99%;
     display: flex;
     align-items: center;
-
-
-}
-
-.alchemy_symbol {
-    margin-left: 30px;
-    height: 50px;
-
-}
-
-/*--//  TOP CONTENTS--*/
-
-/*--CHAPTER VIEW--*/
-.chapter_view_wrap {
-    width: 100%;
-    height: 90%;
-    display: flex;
-
-}
-
-.chapters_list {
-    position: relative;
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
     justify-content: center;
-    margin-left: 30px;
+    flex-flow: column;
 
 }
 
 .chapters {
+    position: relative;
     color: #fff;
-    margin: 10px 0px;
-    font-size: 1.3em;
-    opacity: 0.4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin: 7px 0px;
+    opacity: 0.7;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+
 }
 
-.chapter_view {
+.intro_underline {
+    border: 1px solid white;
+    opacity: 0.7;
+    width: 100px;
+}
+
+
+/*---THE CHAPTERS---*/
+
+.top_chapter_contents {
+    width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    flex-flow: column;
 
 }
 
 .chapter_title {
     color: #fff;
-    text-align: center;
-    text-transform: uppercase;
     margin: 0;
-    margin-bottom: 20px;
+
 }
 
-.chapter_underline {
-    width: 0px;
-    border: 1px solid red;
-    margin-bottom: 20px;
-    align-self: center;
+.chapter_title_underline {
+    width: 50%;
 }
 
-.chapter_number {
-    position: relative;
+
+.chapter_view {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
 
 }
 
-/*--//  CHAPTER VIEW--*/
+.chapter_view::-webkit-scrollbar {
+    display: none;
+}
 
-.introduction_chapter,
-.hermetic_philosophy_chapter,
-.seven_principles_chapter,
-.mental_transmutation_chapter {
-    width: 70%;
-    height: 100%;
+.introduction_chapter {
+    width: 50%;
     color: #fff;
     font-size: 1.3em;
-    display: flex;
-    flex-flow: column;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-
-}
-
-.hermetic_philosophy_chapter,
-.seven_principles_chapter,
-.mental_transmutation_chapter {
-    display: none;
-    position: relative;
-
-
-}
-
-.hp_quote,
-.hp_quote2,
-.hp_quote3,
-.sp_quote,
-.sp_quote2 {
-    width: 70%;
-    margin: 0px 0px 30px 0px;
-    margin-left: 147.5px;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    opacity: 0;
-
-}
-
-.sp_quote,
-.sp_quote2 {
-    opacity: 1;
-}
-
-.hp_quote2 {
-    margin-top: 30px;
-}
-
-.author_small {
-    align-self: center;
-    opacity: 1;
-    /*--rememeber to reset to 0!--*/
-
-}
-
-
-.intro_poem {
-    width: 80%;
-    margin: 0px 0px 30px 0px;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-    align-self: center;
-    text-align: center;
-}
-
-.principles_wrap {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 30px 0px;
-    width: 100%;
-    opacity: 0.7;
-}
-
-.principles {
-    margin: 10px 0px;
-    align-self: center;
     font-weight: 200;
-    
+
 
 }
 
-.end_of_chapter {
-    margin: 30px 0px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: red;
+
+/*---//  THE CHAPTERS---*/
+
+.chapters:hover {
+    border: none;
+    opacity: 0.3;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #2e2e2e, #272727);
+    box-shadow: 5px 5px 10px #252525,
+        -5px -5px 10px #313131;
+    color: #FFF;
 }
 
-
-.light_text {
-    opacity: 0.5;
-}
-
-.introduction_chapter::-webkit-scrollbar,
-.hermetic_philosophy_chapter::-webkit-scrollbar,
-.seven_principles_chapter::-webkit-scrollbar {
-    display: none;
+a {
+    text-decoration: none;
+    outline: none;
 }
