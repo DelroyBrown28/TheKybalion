@@ -30,7 +30,7 @@ $(document).ready(function () {
                 $(".author_small, .hp_quote, .hp_quote2").animate({
                     opacity: "0.7",
                 }, 1000);
-                $(".hp_quote3").animate({
+                $(".hp_quote3, .sp_quote").animate({
                     opacity: "0.7",
                 }, 1000)
                 $(".chapter_underline").animate({
