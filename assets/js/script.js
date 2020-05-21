@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
     function welcome() {
-        $(".top_menu").delay(200).animate({
+        $(".top_menu").delay(100).animate({
             height: "10%"
         }, 1000, function () {
             $(".chapters").delay(900).animate({
                 opacity: "1"
-            }, function() {
+            }, function () {
                 $("#display_chapter").animate({
                     opacity: "1"
-                }, function() {
+                }, function () {
                     $(".kybalion_logo").animate({
-                        opacity: "0.7"
+                        opacity: "0.5"
                     }, 800)
                 })
             })
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     $("#menu_introduction_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Introduction.";
+            document.getElementById("display_chapter").innerHTML = "I<small>NTRODUCTION</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $("#hermetic_philosophy_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "The Hermetic Philosophy.";
+            document.getElementById("display_chapter").innerHTML = "T<small>HE</small> H<small>ERMETIC</small> P<small>HILOSOPHY</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     $("#seven_hermetic_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "The Seven Hermetic Principles..";
+            document.getElementById("display_chapter").innerHTML = "T<small>HE</small> S<small>EVEN</small> H<small>ERMETIC</small> P<small>RINCIPLES</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     $("#mental_transmutation_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Mental Transmutation.";
+            document.getElementById("display_chapter").innerHTML = "M<small>ENTAL</small> T<small>RANSMUTATION</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     $("#the_all_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "The All.";
+            document.getElementById("display_chapter").innerHTML = "T<small>HE</small> A<small>LL</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     $("#mental_universe_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "The Mental Universe.";
+            document.getElementById("display_chapter").innerHTML = "T<small>HE</small> M<small>ENTAL</small> U<small>NIVERSE</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     $("#divince_paradox_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "The Divine Paradox";
+            document.getElementById("display_chapter").innerHTML = "T<small>HE</small> D<small>IVINE</small> P<small>ARADOX</small>";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -87,7 +87,7 @@ $(document).ready(function () {
 
     $("#theall_inall_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = '"The All" in All.';
+            document.getElementById("display_chapter").innerHTML = '"T<small>HE</small> A<small>LL</small>" I<small>N</small> A<small>LL</small>.';
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
     $("#planes_correspondence_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "The Planes of Correspondence.";
+            document.getElementById("display_chapter").innerHTML = "T<small>HE</small> P<small>LANES</small> O<small>F</small> C<small>ORRESPONDENCE</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -105,7 +105,7 @@ $(document).ready(function () {
 
     $("#vibration_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Vibration.";
+            document.getElementById("display_chapter").innerHTML = "V<small>IBRATION</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -114,7 +114,7 @@ $(document).ready(function () {
 
     $("#polarity_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Polarity.";
+            document.getElementById("display_chapter").innerHTML = "P<small>OLARITY</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -123,7 +123,7 @@ $(document).ready(function () {
 
     $("#rhythm_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Rhythm.";
+            document.getElementById("display_chapter").innerHTML = "R<small>HYTHM</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -132,7 +132,7 @@ $(document).ready(function () {
 
     $("#causation_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Causation.";
+            document.getElementById("display_chapter").innerHTML = "C<small>AUSATION</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -141,7 +141,7 @@ $(document).ready(function () {
 
     $("#gender_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Gender.";
+            document.getElementById("display_chapter").innerHTML = "G<small>ENDER</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -150,7 +150,7 @@ $(document).ready(function () {
 
     $("#mental_gender_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Mental Gender.";
+            document.getElementById("display_chapter").innerHTML = "M<small>ENTAL</small> G<small>ENDER</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
@@ -159,19 +159,10 @@ $(document).ready(function () {
 
     $("#hermetic_axioms_chapter").on({
         mouseenter: function () {
-            document.getElementById("display_chapter").innerHTML = "Hermetic Axioms.";
+            document.getElementById("display_chapter").innerHTML = "H<small>ERMETIC</small> A<small>XIOMS</small>.";
         },
         mouseleave: function () {
             document.getElementById("display_chapter").innerHTML = "";
         }
     });
-
-
-
-
-
-
-
-
-
 })
